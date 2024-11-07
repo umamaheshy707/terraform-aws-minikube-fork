@@ -149,7 +149,7 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_eip" "minikube" {
-  vpc = true
+  domain = "vpc"
 }
 
 resource "aws_instance" "minikube" {
